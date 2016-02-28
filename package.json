@@ -1,0 +1,19 @@
+{
+  "name": "pln",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node lib/index.js",
+    "test": ""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ect": "^0.5.9",
+    "js-yaml": "^3.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^2.2.0"
+  }
+}
