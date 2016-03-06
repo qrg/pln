@@ -2,18 +2,29 @@
   "name": "pln",
   "version": "0.0.1",
   "description": "",
-  "main": "lib/index.js",
-  "scripts": {
-    "start": "node lib/index.js",
-    "test": ""
-  },
+  "main": "gulpfile.js",
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "ect": "^0.5.9",
-    "js-yaml": "^3.5.3"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "eslint": "^2.2.0"
+    "bluebird": "^3.3.3",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-ect": "^1.3.1",
+    "gulp-uncss": "^1.0.4",
+    "gulp-yaml": "^1.0.1",
+    "inquirer": "^0.12.0",
+    "lodash": "^4.6.1",
+    "minimist": "^1.2.0"
+  },
+  "scripts": {
+    "start": "npm run",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch",
+    "server": "gulp serve",
+    "uncss": "gulp uncss",
+    "sample": "node --harmony $(npm bin)/gulp sample",
+    "build-html": "node --harmony $(npm bin)/gulp build-html",
+    "re-install": "rm -rf ./node_modules && npm cache clean && npm cache ls && rm -rf ~/.npm && npm install"
   }
 }

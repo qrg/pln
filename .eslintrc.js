@@ -1,4 +1,5 @@
 module.exports = {
+  'extends': ['eslint:recommended'],
   'rules': {
     'indent': [
       2,
@@ -20,12 +21,12 @@ module.exports = {
     'no-unused-vars': 0,
     'no-undef': 0
   },
-  'ecmaFeatures': {
-    'modules': true
-  },
   'env': {
     'es6': true,
     'node': true
   },
-  'extends': 'eslint:recommended'
+  'parserOptions': {
+    'ecmaVersion': 6,
+    'sourceType': 'module'
+  }
 };
